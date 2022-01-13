@@ -1,0 +1,141 @@
+/* Mobile View */
+html{
+  scroll-behavior: smooth;
+}
+
+.skip {
+  color: blue;
+  background-color: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+
+.skip:focus {
+  position: absolute;
+  top: 0px;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: grey;
+}
+
+body {
+  background-color: black;
+  font-family: "Noto Sans", serif;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+body header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+
+li {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 3px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+li:nth-child(4) {
+  padding: 8px;
+  border-color: #bb0b05;
+  font-size: 20px;
+}
+
+header p {
+  font-size: 4vw;
+}
+
+header > img {
+  width: 80px;
+}
+
+.main header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/inter_header.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+  min-height: 280px;
+  max-height: 650px;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 11vw;
+  text-align: center;
+  flex-grow: 0.3;
+  padding-top: 100px;
+}
+
+.main header p {
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  flex-grow: 1;
+}
+
+#international {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 400px;
+  padding: 10px 15px 10px 15px;
+}
+
+.card p {
+  overflow-y: scroll;
+  line-height: 25px;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 8px;
+}
+
+#international img {
+  width: 100%;
+  height: 180px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  justify-content: center;
+  font-size: 13px;
+}
